@@ -80,3 +80,9 @@ $ rm ${HOME}/bin/git-credential-bitwarden
 $ git config --global --unset credential.helper
 ```
 You might be able to remove ${HOME}/bin directory and PATH configuration from your `${HOME}/.bashrc` file.
+
+
+## Known issue
+
+- Need to unlock and reregister `BW_SESSION` after the expiration.
+- The command is slow.
