@@ -50,7 +50,7 @@ $ source .bashrc
 
 Download the file `git-credential-bitwarden`.
 ```
-$ curl -o ${HOME}/bin/git-credential-bitwarden https://github.com/superdaigo/git-credential-bitwarden/git-credential-bitwarden
+$ curl -o ${HOME}/bin/git-credential-bitwarden https://raw.githubusercontent.com/superdaigo/git-credential-bitwarden/master/git-credential-bitwarden
 ```
 
 ### 2. Change file mode to 755
