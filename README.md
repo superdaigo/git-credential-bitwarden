@@ -4,22 +4,38 @@
 
 This scirpt is git subcommand `credential-bitwarden` which manages git credential using Bitwarden CLI.
 
+
 ## Why this is created?
 
 I personally use Bitwarden to manage my credentials. So I'd like to store GitHub access key using Bitwarden on my Linux PC.
+
 For macOS, there is an embedded integration `credential-osxkeychain` in Git command but it doesn't work on Linux.
 
 
 ## How it works
 
 The command is called by git bommand if needed.
-To use the integration, you have have valid BW_SESSION environment variable.
+
+To use the integration, you have to configure valid `BW_SESSION` environment variable.
+
+
+The `BW_SESSION` value can be obtained/configured by the following commands.
+```
+$ bw login
+$ bw unlock
+
+...
+
+$ export BW_SESSION="....."
+```
+
 
 ## Requirements
 
 - Python 3 (Tested by Python 3.7)
 - Bitwarden CLI (https://github.com/bitwarden/cli)
 - Valid BW_SESSION environment valiable
+
 
 ## How to install
 
